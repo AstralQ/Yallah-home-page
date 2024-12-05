@@ -1,0 +1,45 @@
+/* Center the first-div and make it mimic the iPhone 14 Pro screen size */
+body, html, #root {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* White background for the entire page */
+  }
+  
+  /* Simulate an iPhone 14 Pro screen with rounded corners and light grey background */
+  .first-div {
+    width: 393px;   /* Width of iPhone 14 Pro */
+    height: 852px;  /* Height of iPhone 14 Pro */
+    background-color: #f8f9fa; /* Light grey color for the first-div */
+    border-radius: 42px; /* Rounded corners for iPhone 14 Pro */
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Center the image inside the iPhone screen */
+  .container {
+    width: 100%; /* Full width of the first-div */
+    height: 100%; /* Full height of the first-div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Make the image exactly 150px by 170px with fully rounded corners and a shadow */
+  .container img {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;     /* Ensures the image fits exactly */
+    border-radius: 50%;    /* Fully rounded corners for the image (oval shape) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Main shadow */
+                0 6px 20px rgba(0, 0, 0, 0.19); /* Soft shadow for depth */
+  }
+  
+  
